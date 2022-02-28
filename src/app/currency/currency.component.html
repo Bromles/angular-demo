@@ -1,0 +1,29 @@
+<div class="card">
+    <p-treeTable [value]="data">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Буквенный код валюты</th>
+                <th>Цифровой код валюты</th>
+                <th>Описание</th>
+                <th>Страны</th>
+                <th>Ремарки</th>
+                <th>Действительно с</th>
+                <th>Действительно до</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowNode let-rowData="rowData">
+            <tr [ttRow]="rowNode">
+                <td>
+                    <p-treeTableToggler [rowNode]="rowNode"></p-treeTableToggler>
+                    {{rowData.codealpha}}
+                </td>
+                <td>{{rowData.codenum}}</td>
+                <td>{{rowData.descr}}</td>
+                <td>{{rowData.countries}}</td>
+                <td>{{rowData.remarks}}</td>
+                <td>{{rowData.validfrom}}</td>
+                <td>{{rowData.validto}}</td>
+            </tr>
+        </ng-template>
+    </p-treeTable>
+</div>

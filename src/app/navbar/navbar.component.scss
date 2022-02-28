@@ -1,0 +1,24 @@
+.icon {
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.vertical-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100px;
+}
+
+a {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin: 5px;
+}

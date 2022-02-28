@@ -1,0 +1,11 @@
+<nav>
+    <span (click)="toggleSidebar()" class="pi pi-bars icon"></span>
+</nav>
+
+<p-sidebar [(visible)]="showSidebar">
+    <div class="vertical-nav">
+        <a routerLink="/" (click)="toggleSidebar()">Домашняя страница</a>
+        <a routerLink="/currency" (click)="toggleSidebar()">Валюты</a>
+        <a routerLink="/mu" (click)="toggleSidebar()">Единицы измерения</a>
+    </div>
+</p-sidebar>
